@@ -94,8 +94,6 @@ table {
   padding-right: 15px;
 }
 
-
-
 /* CLEARFIX 
 -Clear fix prevents content from wrapping around floated items
 -Clear property include left, right, both
@@ -104,7 +102,6 @@ table {
 -The :before pseudo-element is used to insert some content before the content of an element, vice versa with :after 
 */
 
-*/
 .group:before,
 .group:after {
   content: "";
@@ -117,6 +114,7 @@ table {
   clear: both;
   *zoom: 1;
 }
+
 
 /* TYPOGRAPHY */
 
@@ -150,43 +148,94 @@ h5 {
   color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,
+em {
+  font-style: italic;
 }
 
 /* BUTTONS */
 
 .btn {
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+}
+
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
 }
 
 /* HOME */
 
-.hero {
+.intro {
+  color: #fff;
+  line-height: 44px;
   padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.intro h2 {
+  font-size: 23px;
+}
+.intro p {
+  font-size: 20px;
+  font-weight: 100;
 }
 
 /* PRIMARY HEADER */
 
 /* add border to top and vertical padding to give logo breathing room */
+
 .logo {
   border-top: 4px solid #648880;
-  padding: 40px 0 22px 0;
   float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;  
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 /* PRIMARY FOOTER */
 
 .primary-footer small {
   float: left;
+  font-weight: 400;
 }
 
 .primary-footer {
+  color: #638880;
+  font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
 }
@@ -194,10 +243,53 @@ h5 {
 /* FONT STYLES */
 
 body {
+  background: #293f50;
   color: #888;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* LINKS */
+
+a:hover {
+  color: #a9b2b9;
+}
+
+a{
+  color: #648880;
+  text-decoration: none;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5
+}
+
+.toc a:hover h3 {
+  color: #a9b2b9;
+}
+
+.primary-footer a,
+.primary-header a {
+  color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880
+}
+
+/* NAVIGATION */
+
+.nav {
+  text-align: right;
+}
+
+/* ROWS */
+
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
 
 
 

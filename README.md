@@ -1,2 +1,1 @@
-# fowd_mock
-mock design for the future of web design conference
+This project was meant for personal coding practice. You can visit the actual website here: https://futureofwebdesign.com/san-francisco-2015

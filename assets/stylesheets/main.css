@@ -484,3 +484,8 @@ table h4 {
   color: #000;
 }
 
+/* ABOUT */
+
+.border {
+  border-image: 1px solid black;
+}
